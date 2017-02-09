@@ -38,7 +38,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function (id) {
         // initializes the calendar and menu buttons
-        $("#jqxCalendar").jqxCalendar({ theme: "darkblue", width: 320, height: 320, titleHeight: 40 });
+        $("#jqxCalendar").jqxCalendar({ theme: "darkblue", width: '100%', height: 320, titleHeight: 40 });
         $("#darkblue").jqxButton({ theme: "darkblue", width: 100, height: 40 });
         $("#orange").jqxButton({ theme: "orange", width: 100, height: 40 });
         $("#lefrog").jqxButton({ theme: "ui-le-frog", width: 100, height: 40 });
