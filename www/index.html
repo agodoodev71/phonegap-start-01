@@ -21,24 +21,58 @@
 -->
 <html>
     <head>
+        <title>A jQWidgets Mobile Application</title>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <link rel="Stylesheet" type="text/css" href="css/jqx.base.css" />
+        <link rel="Stylesheet" type="text/css" href="css/jqx.darkblue.css" />
+        <link rel="Stylesheet" type="text/css" href="css/jqx.orange.css" />
+        <link rel="Stylesheet" type="text/css" href="css/jqx.ui-le-frog.css" />
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jqxcore.js"></script>
+        <script type="text/javascript" src="js/jqxdatetimeinput.js"></script>
+        <script type="text/javascript" src="js/jqxcalendar.js"></script>
+        <script type="text/javascript" src="js/jqxtooltip.js"></script>
+        <script type="text/javascript" src="js/jqxbuttons.js"></script>
+        <script type="text/javascript" src="js/globalize.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+            <div id="calendarWrapper" style="position: absolute; box-sizing: border-box; padding-bottom: 62px;
+                width: 100%; height: 100%;">
+                <div id='jqxCalendar'>
+                </div>
+            </div>
+            <div id="menu" style="display: none; position: absolute; bottom: 0; width: 100%;
+                height: 62px; background-color: #E5E5E5;">
+                <button id="darkblue" style="margin: 10px 10px 10px 0px;">
+                    Dark Blue</button>
+                <button id="orange" style="margin: 10px 10px 10px 0px;">
+                    Orange</button>
+                <button id="lefrog" style="margin: 10px 0px;">
+                    Le Frog</button>
             </div>
         </div>
+
+        <!--<div class="app">-->
+            <!--<h1>PhoneGap</h1>-->
+            <!--<div id="deviceready" class="blink">-->
+                <!--<p class="event listening">Connecting to Device</p>-->
+                <!--<p class="event received">Device is Ready</p>-->
+            <!--</div>-->
+        <!--</div>-->
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
